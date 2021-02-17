@@ -2,10 +2,9 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-
-/* ::-webkit-scrollbar {
+.headbar::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .entryTags {
     font-size: large;
