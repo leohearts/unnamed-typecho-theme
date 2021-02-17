@@ -1,0 +1,69 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.entryTags {
+    font-size: large;
+    font-style: italic;
+    color: #676767;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.headbar {
+    display: flex;
+    margin: 3% 8% 5%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.headbar .descriptions * {
+    display: block;
+    margin: 0px;
+    overflow: visible;
+}
+
+.headbar a {
+    font-variant: small-caps;
+}
+
+.headbar .navigations {
+    display: flex;
+    left: 30%;
+    position: relative;
+    font-variant: small-caps;
+}
+
+.headbar .navigations * {
+    margin-left: 30px;
+}
+
+.main {
+    margin: 7% 10%;
+}
+
+.post {
+    margin-top: 5%;
+    display: block ruby;
+    display: -webkit-box;
+}
+
+.post .texts {
+    display: block;
+    width: 70%;
+}
+
+.post img {
+    width: 30%;
+}
+
+.postMainCover img {
+    width: 100%;
+}
