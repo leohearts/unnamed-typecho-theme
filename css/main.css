@@ -79,5 +79,5 @@ a {
 }
 
 pre {
-    overflow: scroll;
+    overflow: auto;
 }
