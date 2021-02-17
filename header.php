@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/main.css'); ?>" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/prism.css'); ?>" async defer />
+    <script src="<?php $this->options->themeUrl('js/prism.js'); ?>" async defer ></script>
 </head>
 
 <body>
