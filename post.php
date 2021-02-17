@@ -11,7 +11,7 @@
     </div>
     <?php while ($this->next()) : ?>
         <div class="post">
-            <div class="texts">
+            <div class="postText">
                 <h2 class="entryTitle"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
                 <div class="entryTags">
                     <p><?php $this->category('/'); ?> on <?php $this->date('Y/m/d'); ?></p>

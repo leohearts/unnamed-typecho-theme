@@ -61,6 +61,11 @@ a {
     width: 70%;
 }
 
+.post .postText {
+    display: block;
+    width: 100%;
+}
+
 .post .postCover {
     width: 30%;
 }
