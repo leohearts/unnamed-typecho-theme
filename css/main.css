@@ -36,9 +36,10 @@ a {
 
 .headbar .navigations {
     display: flex;
-    left: 30%;
-    position: relative;
+    right: 0px;
+    position: absolute;
     font-variant: small-caps;
+    margin-right: 30%;
 }
 
 .headbar .navigations * {
