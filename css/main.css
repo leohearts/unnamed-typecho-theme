@@ -80,5 +80,8 @@ a {
 
 pre {
     overflow: auto;
-    font-family: monospace;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
 }
