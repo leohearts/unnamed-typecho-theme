@@ -1,4 +1,4 @@
-* {
+body {
     font-family: 'Nunito', sans-serif;
 }
 
@@ -80,4 +80,5 @@ a {
 
 pre {
     overflow: auto;
+    font-family: monospace;
 }
