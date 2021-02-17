@@ -79,10 +79,10 @@ a {
 }
 
 pre {
-    white-space: pre-wrap;
+    white-space: pre-wrap !important;
 }
 
 code {
-    font-family: 'Source Code Pro', monospace;
-    white-space: inherit;
+    font-family: 'Source Code Pro', monospace !important;
+    white-space: inherit !important;
 }
