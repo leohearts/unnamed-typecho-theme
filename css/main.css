@@ -2,7 +2,11 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.headbar::-webkit-scrollbar {
+.navigations::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -16,6 +20,10 @@ a {
     text-decoration: none;
     color: inherit;
     word-break: break-all;
+}
+
+img {
+    max-width: 100%;
 }
 
 .headbar {
@@ -37,14 +45,18 @@ a {
 
 .headbar .navigations {
     display: flex;
-    right: 0px;
+    right: 10%;
     position: absolute;
     font-variant: small-caps;
-    margin-right: 30%;
+    scrollbar-width: none;
+    margin-left: 40%;
+    max-width: 30%;
+    overflow: auto;
 }
 
 .headbar .navigations * {
     margin-left: 30px;
+    min-width: max-content;
 }
 
 .main {
@@ -86,4 +98,5 @@ pre {
 code {
     font-family: 'Source Code Pro', monospace !important;
     white-space: inherit !important;
+    word-break: break-all;
 }

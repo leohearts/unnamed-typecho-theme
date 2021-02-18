@@ -2,6 +2,8 @@
 <?php $this->header(); ?>
 <meta http-equiv="content-type" content="text/html; charset=UTF8" />
 
+<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+
 <head>
     <title><?php $this->options->title(); ?><?php $this->archiveTitle(); ?></title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/main.css'); ?>" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/prism.css'); ?>" defer />
-    <script src="<?php $this->options->themeUrl('js/prism.js'); ?>" ></script>
+    <script src="<?php $this->options->themeUrl('js/prism.js'); ?>" async></script>
 </head>
 
 <body>
