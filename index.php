@@ -17,7 +17,7 @@
                 <?php if ($this->fields->Cover) { ?>
                     <img alt="cover" src="<?php echo $this->fields->Cover ?>">
                 <?php } else { ?>
-                    <img alt="cover" src="<?php echo "https://leohearts.com/usr/uploads/2020/09/324859977.webp" ?>">
+                    <img alt="cover" src="<?php echo $this->options->background ?>">
                 <?php } ?>
             </div>
         </div>

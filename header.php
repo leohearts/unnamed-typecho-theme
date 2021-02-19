@@ -22,6 +22,10 @@
     </noscript>
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/main.css'); ?>" />
     <script src="<?php $this->options->themeUrl('js/prism.js'); ?>" async></script>
+    <?php if ($this->is('post')) : ?>
+        <script src="<?php $this->options->themeUrl('js/post.js'); ?>" async></script>
+        <script src="<?php $this->options->themeUrl('js/fslightbox.js'); ?>" async defer></script>
+    <?php endif; ?>
 </head>
 
 <body>
