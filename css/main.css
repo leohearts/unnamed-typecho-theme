@@ -27,7 +27,7 @@
 }
 
 :focus {
-    outline: 1px solid pink;
+    outline: none;
 }
 
 :focus-visible {
