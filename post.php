@@ -10,7 +10,7 @@
         <?php } ?>
     </div>
     <?php while ($this->next()) : ?>
-        <div class="post">
+        <div class="postPost">
             <div class="postText">
                 <h1 class="entryTitle"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
                 <div class="entryTags">

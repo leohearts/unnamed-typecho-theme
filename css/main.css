@@ -30,10 +30,6 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.headbar::-webkit-scrollbar {
-    display: none;
-}
-
 blockquote {
     border-left: 10px solid pink;
     margin: 1em;
@@ -63,6 +59,10 @@ img {
 
 .postMainCover img {
     border-radius: 10px;
+}
+
+.postPost .entryTags {
+    margin-bottom: 2em;
 }
 
 .headbar {
