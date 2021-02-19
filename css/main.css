@@ -22,6 +22,14 @@ img {
     max-width: 100%;
 }
 
+.post img {
+    border-radius: 10px;
+}
+
+.postMainCover img {
+    border-radius: 10px;
+}
+
 .headbar {
     display: flex;
     margin: 3% 8% 5%;
