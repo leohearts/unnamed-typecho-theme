@@ -130,6 +130,10 @@ img {
     width: 100%;
 }
 
+.entryText a {
+    color: #d22b48;
+}
+
 pre {
     white-space: pre-wrap !important;
 }
