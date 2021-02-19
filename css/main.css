@@ -6,6 +6,12 @@ body {
     display: none;
 }
 
+blockquote {
+    border-left: 10px solid pink;
+    margin: 1em;
+    padding: 0 1em;
+}
+
 .entryTags {
     font-size: large;
     font-style: italic;
