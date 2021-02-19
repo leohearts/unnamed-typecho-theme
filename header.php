@@ -31,8 +31,8 @@
             <h1><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
             <p><?php $this->options->description() ?></p>
         </div>
-        <ul class="navigations">
+        <div class="navigations">
             <?php $this->widget('Widget_Contents_Page_List')
                 ->parse('<a href="{permalink}">{title}</a>'); ?>
-        </ul>
+        </div>
     </div>
