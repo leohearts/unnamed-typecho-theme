@@ -26,6 +26,14 @@
     background: transparent;
 }
 
+:focus {
+    outline: 1px solid pink;
+}
+
+:focus-visible {
+    outline: 1px dashed pink;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
 }
