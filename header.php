@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-cn">
 <?php $this->header(); ?>
 <meta http-equiv="content-type" content="text/html; charset=UTF8" />
 
@@ -7,10 +8,19 @@
 <head>
     <title><?php $this->options->title(); ?><?php $this->archiveTitle(); ?></title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap">
+    </noscript>
+    <link rel="preload" href="<?php $this->options->themeUrl('css/prism.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="<?php $this->options->themeUrl('css/prism.css'); ?>">
+    </noscript>
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/main.css'); ?>" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/prism.css'); ?>" defer />
     <script src="<?php $this->options->themeUrl('js/prism.js'); ?>" async></script>
 </head>
 
