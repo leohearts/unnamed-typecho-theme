@@ -1,6 +1,6 @@
 * {
     scrollbar-width: thin;
-    scrollbar-color: pink white;
+    scrollbar-color: pink transparent;
 }
 
 ::-webkit-scrollbar {
