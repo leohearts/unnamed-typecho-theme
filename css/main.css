@@ -62,11 +62,18 @@ img {
     height: auto;
 }
 
-.post img {
+.post img imgParent {
+    border-radius: 10px;
+}
+.post imgParent {
     border-radius: 10px;
 }
 
 .postMainCover img {
+    border-radius: 10px;
+}
+
+.postMainCover imgParent {
     border-radius: 10px;
 }
 
