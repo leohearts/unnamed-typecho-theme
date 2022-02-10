@@ -2,6 +2,8 @@
 require_once 'vendor/autoload.php';
 use kornrunner\Blurhash\Blurhash;
 
+ini_set('default_socket_timeout', 1);
+
 function fallbackEncodeBlurhash($file){
     $image = imagecreatefromstring(file_get_contents($file));
     $width = imagesx($image);
