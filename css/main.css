@@ -65,7 +65,7 @@ img {
 .post img {
     border-radius: 10px;
 }
-.post imgParent {
+.post .imgParent {
     border-radius: 10px;
 }
 
@@ -73,7 +73,7 @@ img {
     border-radius: 10px;
 }
 
-.postMainCover imgParent {
+.postMainCover .imgParent {
     border-radius: 10px;
 }
 
