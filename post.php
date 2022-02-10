@@ -1,12 +1,12 @@
 <?php $this->need('header.php'); ?>
-
+<?php $this->need('utils.php'); ?>
 
 <div class="main">
     <div class="postMainCover">
         <?php if ($this->fields->Cover) { ?>
-            <img alt="cover" src="<?php echo $this->fields->Cover ?>">
+            <img alt="cover" <?php $fileBlurhash = encodeBlurhash($this->fields->Cover);echo ' width=' . $fileBlurhash['width'] . ' height=' . $fileBlurhash['height'] . ' blurhash="' . $fileBlurhash["hash"] . '"' . ' src="' . $this->fields->Cover.'"'; ?>>
         <?php } else { ?>
-            <img alt="cover" src="<?php echo $this->options->background ?>">
+            <img alt="cover" <?php $fileBlurhash = encodeBlurhash($this->options->background);echo ' width=' . $fileBlurhash['width'] . ' height=' . $fileBlurhash['height'] . ' blurhash="' . $fileBlurhash["hash"] . '"' . ' src="' . $this->options->background.'"'; ?>>
         <?php } ?>
     </div>
     <?php while ($this->next()) : ?>
@@ -17,7 +17,7 @@
                     <p><?php $this->category('/'); ?> on <?php $this->date('Y/m/d'); ?></p>
                 </div>
                 <div class="entryText">
-                    <?php $this->content(''); ?>
+                    <?php echo $this->content; ?>
                 </div>
             </div>
         </div>

@@ -59,6 +59,7 @@ a {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 .post img {
@@ -150,4 +151,11 @@ code {
     font-family: 'Source Code Pro', monospace !important;
     white-space: inherit !important;
     word-break: break-all;
+}
+
+.imgParent {
+    width: fit-content;
+    height: fit-content;
+    background-size: 100%;
+    display: flex;
 }
