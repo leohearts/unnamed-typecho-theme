@@ -15,9 +15,9 @@
             </div>
             <div class="postCover">
                 <?php if ($this->fields->Cover) { ?>
-                    <img alt="cover" src="<?php echo $this->fields->Cover ?>">
+                    <img alt="cover" <?php $fileBlurhash = encodeBlurhash($this->fields->Cover);echo ' width=' . $fileBlurhash['width'] . ' height=' . $fileBlurhash['height'] . ' blurhash="' . $fileBlurhash["hash"] . '"' . ' src="' . $this->fields->Cover.'"'; ?>>
                 <?php } else { ?>
-                    <img alt="cover" src="<?php echo $this->options->background ?>">
+                    <img alt="cover" <?php $fileBlurhash = encodeBlurhash($this->options->background);echo ' width=' . $fileBlurhash['width'] . ' height=' . $fileBlurhash['height'] . ' blurhash="' . $fileBlurhash["hash"] . '"' . ' src="' . $this->options->background.'"'; ?>>
                 <?php } ?>
             </div>
         </div>
