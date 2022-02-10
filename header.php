@@ -20,6 +20,12 @@
     <noscript>
         <link rel="stylesheet" href="<?php $this->options->themeUrl('css/prism.css'); ?>">
     </noscript>
+    <!-- require APlayer -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"></noscript>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" defer></script>
+    <!-- require MetingJS -->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js" defer></script>
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/main.css'); ?>" />
     <script src="<?php $this->options->themeUrl('js/prism.js'); ?>" async></script>
     <?php if ($this->is('post')) : ?>
