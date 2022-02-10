@@ -138,11 +138,11 @@ img {
     width: 30%;
 }
 
-.post .postCover img {
+.post .postCover .imgParent {
     width: 100%;
 }
 
-.postMainCover img {
+.postMainCover .imgParent {
     width: 100%;
 }
 
