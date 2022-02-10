@@ -62,7 +62,7 @@ img {
     height: auto;
 }
 
-.post img imgParent {
+.post img {
     border-radius: 10px;
 }
 .post imgParent {
