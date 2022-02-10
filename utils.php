@@ -36,7 +36,7 @@ function encodeBlurhash($file){
         $result = fallbackEncodeBlurhash($file);
         $redis->set($file, json_encode($result));
     } else {
-        $result = json_decode($cache);
+        $result = json_decode($cache, true);    //treat stdClass as array 
     }
     return $result;
 }
