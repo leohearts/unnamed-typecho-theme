@@ -45,7 +45,7 @@
     function displayBlurhash(node){
         if (node.tagName != "IMG" || node.parentNode.className == "imgParent" || !node.getAttribute("blurhash")) {return}
         node.style.opacity = 0
-        node.style.transition = "0.5s linear"
+        node.style.transition = "0.3s linear"
         node.addEventListener("load", (e)=>{e.target.style.opacity = 1})
         decodedDataArray = decodeBlurHash(node.getAttribute("blurhash"), 64, 64);
         const canvas = document.createElement('canvas');
