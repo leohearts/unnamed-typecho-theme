@@ -2,7 +2,7 @@
 require_once 'vendor/autoload.php';
 use kornrunner\Blurhash\Blurhash;
 
-function encodeBlurhash($file){
+function fallbackEncodeBlurhash($file){
     $image = imagecreatefromstring(file_get_contents($file));
     $width = imagesx($image);
     $height = imagesy($image);
@@ -26,4 +26,17 @@ function encodeBlurhash($file){
     $components_y = 3;
     $blurhash = Blurhash::encode($pixels, $components_x, $components_y);
     return Array("hash"=>$blurhash, "height"=>$height, "width"=>$width);
+}
+
+function encodeBlurhash($file){
+    $redis = new Redis(); 
+    $redis->connect('127.0.0.1', 6379);
+    $cache = $redis->get($file);
+    if (!$cache){
+        $result = fallbackEncodeBlurhash($file);
+        $redis->set($file, json_encode($result));
+    } else {
+        $result = json_decode($cache);
+    }
+    return $result;
 }
