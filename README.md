@@ -9,7 +9,7 @@ Theme for my blog [leohearts.com](https://leohearts.com)
   - [x] Cache with `Redis`
   - [ ] Post content
 - [x] Friend link style ([Demo](https://leohearts.com/friends.html))
-- [ ] Fancybox
+- [x] Fancybox
 
 ## Screenshot
 
