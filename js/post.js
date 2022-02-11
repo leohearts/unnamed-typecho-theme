@@ -9,6 +9,7 @@ window.onload = ()=>{
             newItem.append(newImageItem);
             ex.parentNode.replaceWith(newItem);
         }
+        fsLightbox.props.type = 'image';
         refreshFsLightbox()
     } catch {}
 }
