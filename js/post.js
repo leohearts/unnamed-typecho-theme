@@ -9,5 +9,5 @@ window.onload = ()=>{
             newItem.append(newImageItem);
             e.parentNode.replaceWith(newItem);
         })
-    }
+    } catch {}
 }
