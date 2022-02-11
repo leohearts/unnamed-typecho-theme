@@ -1,13 +1,14 @@
 window.onload = ()=>{
     try{
-        [].forEach.call(document.getElementsByClassName("postPost")[0].querySelectorAll("img"), e => {
-            var newImageItem = e.cloneNode();
+        for(ex of document.getElementsByClassName("postPost")[0].querySelectorAll("img")){
+            var newImageItem = ex.cloneNode();
             var newItem = document.createElement('a');
-            newItem.href = e.src;
+            newItem.href = ex.src;
             newItem.setAttribute('data-fslightbox', 'gallery');
             newImageItem.loading = "lazy";
             newItem.append(newImageItem);
-            e.parentNode.replaceWith(newItem);
-        })
+            ex.parentNode.replaceWith(newItem);
+        }
+        refreshFsLightbox()
     } catch {}
 }
