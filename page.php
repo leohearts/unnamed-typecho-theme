@@ -4,7 +4,7 @@
     <?php while ($this->next()) : ?>
         <div class="postPost">
             <div class="postText">
-                <h1 class="entryTitle"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
+                <h1 class="entryTitle"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
                     <div class="entryTags">
                         <p><?php $this->category('/'); ?> on <?php $this->date('Y/m/d'); ?></p>
                     </div>
