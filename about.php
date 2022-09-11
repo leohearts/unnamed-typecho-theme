@@ -17,7 +17,7 @@ $this->need('header.php'); ?>
             </div>
         </div>
     <?php endwhile; ?>
-
+    <?php $this->need('comments.php'); ?>
 </div>
 
 <?php $this->need("footer.php"); ?>
