@@ -21,7 +21,6 @@ $this->need('header.php'); ?>
             </div>
         </div>
     <?php endwhile; ?>
-    <?php $this->need('comments.php'); ?>
 </div>
 
 <style>
