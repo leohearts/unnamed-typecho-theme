@@ -1,6 +1,6 @@
 <?php
 /**
- * 自定义页面模板
+ * 友链
  *
  * @package custom
  */
