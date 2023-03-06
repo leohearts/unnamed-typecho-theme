@@ -84,7 +84,6 @@ img {
 }
 
 .headbar .descriptions * {
-    display: block;
     margin: 0px;
     overflow: visible;
 }
