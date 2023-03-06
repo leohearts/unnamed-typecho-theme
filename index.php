@@ -1,7 +1,7 @@
 <?php $this->need('header.php'); ?>
 <?php $this->need('utils.php'); ?>
 
-<div class="main">
+<div class="indexMain">
     <?php while ($this->next()) : ?>
         <div class="post">
             <div class="texts">

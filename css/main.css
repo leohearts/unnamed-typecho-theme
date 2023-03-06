@@ -112,6 +112,11 @@ img {
     min-width: max-content;
 }
 
+.indexMain {
+    margin: 3% auto 7% auto;
+    max-width: 75%;
+}
+
 .main {
     margin: 3% auto 7% auto;
     max-width: min(90vw,850px);
