@@ -113,7 +113,8 @@ img {
 }
 
 .main {
-    margin: 7% 10%;
+    margin: 7% auto;
+    max-width: min(90vw,850px);
 }
 
 .post {
