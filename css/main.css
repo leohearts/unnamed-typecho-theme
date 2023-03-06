@@ -100,12 +100,10 @@ img {
 
 .headbar .navigations {
     display: flex;
-    right: 10%;
-    position: absolute;
+    margin: auto 0px auto auto;
+    position: relative;
     font-variant: small-caps;
     scrollbar-width: none;
-    margin-left: 40%;
-    max-width: 30%;
     overflow: auto;
 }
 
