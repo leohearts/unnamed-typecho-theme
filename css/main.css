@@ -166,7 +166,6 @@ code {
     display: flex;
 }
 a {
-    display: inline-block;
     position: relative;
     text-decoration: none;
     color: inherit;
