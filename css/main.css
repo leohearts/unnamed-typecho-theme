@@ -83,7 +83,7 @@ img {
 
 .headbar {
     display: flex;
-    margin: 3% 8% 5%;
+    margin: 3% 8% 3%;
     overflow: scroll;
     scrollbar-width: none;
 }
@@ -113,7 +113,7 @@ img {
 }
 
 .main {
-    margin: 7% auto;
+    margin: 3% auto 7% auto;
     max-width: min(90vw,850px);
 }
 
