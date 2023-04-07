@@ -52,7 +52,7 @@ blockquote {
 }
 
 
-img {
+.main a img {
     max-width: 100%;
     height: auto;
     max-height: 50vh;
@@ -143,6 +143,11 @@ img {
 
 .postMainCover .imgParent {
     width: 100%;
+}
+
+.postMainCover .imgParent img {
+    max-width: 100%;
+    height: auto;
 }
 
 .entryText a {
