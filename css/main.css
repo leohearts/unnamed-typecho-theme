@@ -68,6 +68,7 @@ blockquote {
 
 .postMainCover img {
     border-radius: 10px;
+    max-height: min(50vh, 50vw);
 }
 
 .postMainCover .imgParent {
