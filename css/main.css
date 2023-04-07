@@ -145,7 +145,7 @@ blockquote {
     width: 100%;
 }
 
-.postMainCover .imgParent img {
+.imgParent img {
     max-width: 100%;
     height: auto;
 }
