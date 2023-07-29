@@ -11,4 +11,3 @@
     </script>
 
 <?php endif; ?>
-<a rel="me" href="https://nightcord.de/@Leohearts"></a>
