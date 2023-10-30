@@ -205,6 +205,10 @@ a {
         position: relative;
     }
 
+    .indexMain {
+        max-width: 95%;
+    }
+
     .post .postCover {
         position: absolute;
         left: 0px;
