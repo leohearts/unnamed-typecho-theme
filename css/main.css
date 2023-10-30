@@ -127,7 +127,7 @@ blockquote {
 
 .post .texts {
     display: block;
-    width: 70%;
+    /*! width: 70%; */
 }
 
 .post .postText {
@@ -137,6 +137,7 @@ blockquote {
 
 .post .postCover {
     width: 30%;
+    /*! display: none; */
 }
 
 .post .postCover .imgParent {
@@ -182,6 +183,41 @@ a {
     color: inherit;
     word-break: break-all;
 }
+
+@media(orientation: landscape) {
+    .post{
+        background: inherit!important;
+     }
+    .post .texts {
+        width: 70%;
+    }
+}
+
+@media(orientation: portrait) {
+    .post {
+        border-radius: 10px;
+        text-shadow: 1px 0 10px white,1px 0 10px white;
+        text-decoration: underline pink solid .9em;
+        text-underline-offset: -10px;
+        text-decoration-skip-ink: none;
+        padding: 0px 15px;
+        box-shadow: 5px 5px 10px pink;
+        position: relative;
+    }
+
+    .post .postCover {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .post .postCover .imgParent {
+        height: 100%;
+    }
+}
+
 a::after {
     content: '';
     position: absolute;
