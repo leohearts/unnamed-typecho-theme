@@ -191,6 +191,15 @@ a {
     .post .texts {
         width: 70%;
     }
+    #tableOfContents {
+        float: right;
+        position: fixed;
+        right: 0px;
+        top: 100px;
+        z-index: 0;
+        max-height: 90vh;
+        overflow: scroll;
+    }
 }
 
 @media(orientation: portrait) {
