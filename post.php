@@ -17,7 +17,28 @@
                     <p><?php $this->category('/'); ?> on <?php $this->date('Y/m/d'); ?></p>
                 </div>
                 <div class="entryText">
-                    <?php echo $this->content; ?>
+                    <?php
+
+                    $content = $this->content;
+                    if (preg_match_all('/<h(\d)>(.*)<\/h\d>/isU', $content, $outarr)){
+                    $toc_out = "";
+                    $minlevel = 6;
+                    for ($key=0; $key<count($outarr[2]); $key++) $minlevel = min($minlevel, $outarr[1][$key]);
+                    $curlevel = $minlevel-1;
+                    for ($key=0; $key<count($outarr[2]); $key++) {
+                        $ta = $content;
+                        $tb = strpos($ta, $outarr[0][$key]);
+                        $level = $outarr[1][$key];
+                        $content = substr($ta, 0, $tb). "<a id=\"toc_title{$key}\" style=\"position:relative; top:-50px\"></a>". substr($ta, $tb);
+                        if ($level > $curlevel) $toc_out.=str_repeat("<ol>\n", $level-$curlevel);
+                        elseif ($level < $curlevel) $toc_out.=str_repeat("</ol>\n", $curlevel-$level);
+                        $curlevel = $level;
+                        $toc_out .= "<li><a href=\"#toc_title{$key}\">{$outarr[2][$key]}</a></li>\n";
+                    }
+                    $content = "<div id=\"tableOfContents\">{$toc_out}</div>". $content;
+                }
+                    $echo $content;
+                    ?>
                 </div>
             </div>
         </div>
