@@ -29,11 +29,11 @@
                         $ta = $content;
                         $tb = strpos($ta, $outarr[0][$key]);
                         $level = $outarr[1][$key];
-                        $content = substr($ta, 0, $tb). "<a id=\"toc_title{$key}\" style=\"position:relative; top:-50px\"></a>". substr($ta, $tb);
+                        $content = substr($ta, 0, $tb). "<a id=\"" . urlencode(substr($ta, $tb)) ."{$key}\" style=\"position:relative; top:-50px\"></a>". substr($ta, $tb);
                         if ($level > $curlevel) $toc_out.=str_repeat("<ol>\n", $level-$curlevel);
                         elseif ($level < $curlevel) $toc_out.=str_repeat("</ol>\n", $curlevel-$level);
                         $curlevel = $level;
-                        $toc_out .= "<li><a href=\"#toc_title{$key}\">{$outarr[2][$key]}</a></li>\n";
+                        $toc_out .= "<li><a href=\"#" . urlencode(substr($ta, $tb)) ."{$key}\">{$outarr[2][$key]}</a></li>\n";
                     }
                     $content = "<div id=\"tableOfContents\">{$toc_out}</div>". $content;
                 }
