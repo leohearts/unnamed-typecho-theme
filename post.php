@@ -37,7 +37,7 @@
                     }
                     $content = "<div id=\"tableOfContents\">{$toc_out}</div>". $content;
                 }
-                    $echo $content;
+                    echo $content;
                     ?>
                 </div>
             </div>
