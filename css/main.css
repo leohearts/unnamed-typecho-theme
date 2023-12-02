@@ -205,13 +205,14 @@ a {
 @media(orientation: portrait) {
     .post {
         border-radius: 10px;
-        text-shadow: 1px 0 10px white,1px 0 10px white;
-        text-decoration: underline pink solid .9em;
+        text-shadow: 1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white;
+/*         text-decoration: underline pink solid .9em; */
         text-underline-offset: -10px;
         text-decoration-skip-ink: none;
         padding: 0px 15px;
         box-shadow: 5px 5px 10px pink;
         position: relative;
+        overflow: hidden;
     }
 
     .indexMain {
@@ -228,7 +229,9 @@ a {
     }
     .post .postCover .imgParent {
         height: 100%;
+        filter: blur(2px);
     }
+
 }
 
 a::after {
