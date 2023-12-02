@@ -226,9 +226,6 @@ a {
         height: 100%;
         filter: blur(2px);
     }
-    .post * {
-        color: black;
-    }
 
 }
 
