@@ -127,7 +127,6 @@ blockquote {
 
 .post .texts {
     display: block;
-    /*! width: 70%; */
 }
 
 .post .postText {
@@ -137,7 +136,6 @@ blockquote {
 
 .post .postCover {
     width: 30%;
-    /*! display: none; */
 }
 
 .post .postCover .imgParent {
@@ -205,10 +203,7 @@ a {
 @media(orientation: portrait) {
     .post {
         border-radius: 10px;
-        text-shadow: 1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white;
-/*         text-decoration: underline pink solid .9em; */
-        text-underline-offset: -10px;
-        text-decoration-skip-ink: none;
+        text-shadow: 1px 0 20px white,1px 0 15px white,1px 0 10px white,1px 0 3px white;
         padding: 0px 15px;
         box-shadow: 5px 5px 10px pink;
         position: relative;
