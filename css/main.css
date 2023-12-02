@@ -203,11 +203,13 @@ a {
 @media(orientation: portrait) {
     .post {
         border-radius: 10px;
-        text-shadow: 1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white,1px 0 15px white;
         padding: 0px 15px;
         box-shadow: 5px 5px 10px pink;
         position: relative;
         overflow: hidden;
+    }
+    .post .texts {
+        filter: drop-shadow(0px 0px 10px white) drop-shadow(0px 0px 5px white) drop-shadow(0px 0px 2px white);
     }
 
     .indexMain {
