@@ -203,7 +203,9 @@ html {
     --main-filter-color: white;
 }
 @media (prefers-color-scheme: dark) {
-    --main-filter-color: black;
+    html {
+        --main-filter-color: black;
+    }
 }
 html[data-darkreader-scheme='dark'] {
     --main-filter-color: black;
