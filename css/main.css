@@ -199,7 +199,9 @@ a {
         overflow: scroll;
     }
 }
---main-filter-color: white;
+html {
+    --main-filter-color: white;
+}
 @media (prefers-color-scheme: dark) {
     --main-filter-color: black;
 }
