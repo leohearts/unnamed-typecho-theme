@@ -205,6 +205,14 @@ html {
 @media (prefers-color-scheme: dark) {
     html {
         --main-filter-color: black;
+        background-color: #131516;
+        color: #e8e6e3;
+    }
+    p {
+        color: rgb(219, 216, 211);
+    }
+    blockquote {
+        color: #e8e6e3;
     }
 }
 html[data-darkreader-scheme='dark'] {
