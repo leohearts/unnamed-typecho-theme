@@ -205,7 +205,7 @@ html {
 @media (prefers-color-scheme: dark) {
     html {
         --main-filter-color: black;
-        background-color: #131516;
+        background-color: #181a1b;
         color: #e8e6e3;
     }
     p {
@@ -213,6 +213,23 @@ html {
     }
     blockquote {
         color: #e8e6e3;
+    }
+    :not(pre) > code[class*="language-"], pre[class*="language-"] {
+	   background-color: rgb(25, 27, 28);
+    }
+    code[class*="language-"], pre[class*="language-"] {
+        color: rgb(232, 230, 227);
+        background-color: rgba(0, 0, 0, 0);
+        background-image: none;
+    }
+    pre[class*="language-"] > code {
+        border-left-color: rgb(6, 85, 134);
+        background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(38, 98, 152, 0.04) 50%);
+    }
+    .token.operator, .token.entity, .token.url, .token.variable {
+        color: rgb(175, 140, 106);
+        background-color: rgba(24, 26, 27, 0.5);
+        background-image: none;
     }
 }
 html[data-darkreader-scheme='dark'] {
