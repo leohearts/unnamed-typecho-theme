@@ -225,6 +225,7 @@ html {
     pre[class*="language-"] > code {
         border-left-color: rgb(6, 85, 134);
         background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(38, 98, 152, 0.04) 50%);
+        background-color: rgba(38, 98, 152, 0.04);
     }
     .token.operator, .token.entity, .token.url, .token.variable {
         color: rgb(175, 140, 106);
