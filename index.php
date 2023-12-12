@@ -1,9 +1,5 @@
 <?php
-/**
- * 归档
- *
- * @package custom
- */
+
 
 $this->need('header.php'); ?>
 <?php $this->need('utils.php'); ?>

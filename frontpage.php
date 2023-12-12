@@ -1,4 +1,9 @@
 <?php
+/**
+ * 首页
+ *
+ * @package custom
+ */
 
 $this->need('header.php'); ?>
 
