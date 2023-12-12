@@ -44,6 +44,7 @@
             <p><?php $this->options->description() ?></p>
         </div>
         <div class="navigations">
+            <a href="/blog.html">博客</a>
             <?php $this->widget('Widget_Contents_Page_List')
                 ->parse('<a href="{permalink}">{title}</a>'); ?>
         </div>
