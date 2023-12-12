@@ -5,9 +5,6 @@ $this->need('header.php'); ?>
 <div class="main">
         <div class="postPost">
             <div class="postText">
-                <h1 class="entryTitle"><a href="<?php $this->permalink() ?>">
-                        <?php $this->title() ?>
-                    </a></h1>
                 <div class="entryText">
                     <h1>🥔 Hi there, I'm Leohearts!</h1>
                     <p>可以叫我芋头～</p>
