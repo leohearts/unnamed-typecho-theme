@@ -19,7 +19,6 @@ $this->need('header.php'); ?>
                 </div>
             </div>
         </div>
-    <?php endwhile; ?>
 </div>
 
 
