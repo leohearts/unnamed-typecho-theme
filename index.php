@@ -3,7 +3,6 @@
 $this->need('header.php'); ?>
 
 <div class="main">
-    <?php while ($this->next()): ?>
         <div class="postPost">
             <div class="postText">
                 <h1 class="entryTitle"><a href="<?php $this->permalink() ?>">
