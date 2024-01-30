@@ -74,6 +74,13 @@ window.onload = (()=>{
         friendImage.alt = e.name;
         let friendName = document.createElement("p");
         friendName.innerText = e.name;
+        if ("font" in e){
+            let x = document.createElement("link");
+            x.rel="stylesheet";
+            x.href="https://fonts.googleapis.com/css?family=" + e.font;
+            document.head.appendChild(x);
+            friendName.style.fontFamily = e.font;
+        }
         friendEntry.appendChild(friendImage);
         friendEntry.appendChild(friendName);
         friendsRoot.appendChild(friendEntry);
