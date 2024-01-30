@@ -74,7 +74,7 @@ window.onload = (()=>{
         friendImage.alt = e.name;
         let friendName = document.createElement("p");
         friendName.innerText = e.name;
-        if (e.style){
+        if (e.style != undefined){
             if ("fontFamily" in e.style){
                 let x = document.createElement("link");
                 x.rel="stylesheet";
