@@ -74,12 +74,16 @@ window.onload = (()=>{
         friendImage.alt = e.name;
         let friendName = document.createElement("p");
         friendName.innerText = e.name;
-        if ("font" in e){
-            let x = document.createElement("link");
-            x.rel="stylesheet";
-            x.href="https://fonts.googleapis.com/css?family=" + e.font;
-            document.head.appendChild(x);
-            friendName.style.fontFamily = e.font;
+        if (e.style){
+            if ("fontFamily" in e.style){
+                let x = document.createElement("link");
+                x.rel="stylesheet";
+                x.href="https://fonts.googleapis.com/css?family=" + e.style.fontFamily;
+                document.head.appendChild(x);
+                for (entry in e.style){
+                    friendName.style[entry] = e.style.entry;
+                }
+            }
         }
         friendEntry.appendChild(friendImage);
         friendEntry.appendChild(friendName);
