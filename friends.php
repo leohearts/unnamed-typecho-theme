@@ -80,9 +80,9 @@ window.onload = (()=>{
                 x.rel="stylesheet";
                 x.href="https://fonts.googleapis.com/css?family=" + e.style.fontFamily;
                 document.head.appendChild(x);
-                for (entry in e.style){
-                    friendName.style[entry] = e.style[entry];
-                }
+            }
+            for (entry in e.style){
+                friendName.style[entry] = e.style[entry];
             }
         }
         friendEntry.appendChild(friendImage);
