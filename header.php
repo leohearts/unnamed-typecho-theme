@@ -31,7 +31,7 @@
     <script src="<?php $this->options->themeUrl('js/prism.js'); ?>" async></script>
     <?php if ($this->is('post')) : ?>
         <script src="<?php $this->options->themeUrl('js/post.js'); ?>" async></script>
-        <?php if(isset($this->fields->fslightbox) && $this->fields->fslightbox == "no") : ?>
+        <?php if(!(isset($this->fields->fslightbox) && $this->fields->fslightbox == "no")) : ?>
         <script src="https://cdn.jsdelivr.net/npm/fslightbox@3.3.1/index.js" async defer></script>
         <?php endif; ?>
     <?php endif; ?>
