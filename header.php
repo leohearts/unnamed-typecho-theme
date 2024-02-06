@@ -30,8 +30,8 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/main.css'); ?>" />
     <script src="<?php $this->options->themeUrl('js/prism.js'); ?>" async></script>
     <?php if ($this->is('post')) : ?>
+    <?php if(!(isset($this->fields->fslightbox) && $this->fields->fslightbox == "no")) : ?>
         <script src="<?php $this->options->themeUrl('js/post.js'); ?>" async></script>
-        <?php if(!(isset($this->fields->fslightbox) && $this->fields->fslightbox == "no")) : ?>
         <script src="https://cdn.jsdelivr.net/npm/fslightbox@3.3.1/index.js" async defer></script>
         <?php endif; ?>
     <?php endif; ?>
