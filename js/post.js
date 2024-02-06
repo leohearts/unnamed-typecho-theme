@@ -1,4 +1,7 @@
 window.onload = ()=>{
+    if (window.bypassFslightbox == true) {
+        return;
+    }
     try{
         for(ex of document.getElementsByClassName("postPost")[0].querySelectorAll("img")){
             var newImageItem = ex.cloneNode();
