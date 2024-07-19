@@ -35,7 +35,7 @@
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'LXGW WenKai Light', 'Nunito', sans-serif;
 }
 
 blockquote {
@@ -51,17 +51,16 @@ blockquote {
     color: #676767;
 }
 
-
 .main img {
     max-width: 100%;
     height: auto;
     max-height: 50vh;
 }
 
-
 .post img {
     border-radius: 10px;
 }
+
 .post .imgParent {
     border-radius: 10px;
 }
@@ -116,7 +115,7 @@ blockquote {
 
 .main {
     margin: 3% auto 7% auto;
-    max-width: min(90vw,850px);
+    max-width: min(90vw, 850px);
 }
 
 .post {
@@ -175,6 +174,7 @@ code {
     display: flex;
     object-fit: cover;
 }
+
 a {
     position: relative;
     text-decoration: none;
@@ -183,9 +183,9 @@ a {
 }
 
 @media(orientation: landscape) {
-    .post{
+    .post {
         background: inherit!important;
-     }
+    }
     .post .texts {
         width: 70%;
     }
@@ -199,9 +199,11 @@ a {
         overflow: scroll;
     }
 }
+
 html {
     --main-filter-color: white;
 }
+
 @media (prefers-color-scheme: dark) {
     html {
         --main-filter-color: black;
@@ -214,28 +216,35 @@ html {
     blockquote {
         color: #e8e6e3;
     }
-    :not(pre) > code[class*="language-"], pre[class*="language-"] {
-	   background-color: rgb(25, 27, 28);
+     :not(pre)>code[class*="language-"],
+    pre[class*="language-"] {
+        background-color: rgb(25, 27, 28);
     }
-    code[class*="language-"], pre[class*="language-"] {
+    code[class*="language-"],
+    pre[class*="language-"] {
         color: rgb(232, 230, 227);
         background-color: rgba(0, 0, 0, 0);
         background-image: none;
     }
-    pre[class*="language-"] > code {
+    pre[class*="language-"]>code {
         border-left-color: rgb(6, 85, 134);
         background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(38, 98, 152, 0.04) 50%);
         background-color: rgba(38, 98, 152, 0.04);
     }
-    .token.operator, .token.entity, .token.url, .token.variable {
+    .token.operator,
+    .token.entity,
+    .token.url,
+    .token.variable {
         color: rgb(175, 140, 106);
         background-color: rgba(24, 26, 27, 0.5);
         background-image: none;
     }
 }
+
 html[data-darkreader-scheme='dark'] {
     --main-filter-color: black;
 }
+
 @media(orientation: portrait) {
     .post {
         border-radius: 10px;
@@ -247,11 +256,9 @@ html[data-darkreader-scheme='dark'] {
     .post .texts {
         filter: drop-shadow(0px 0px 10px var(--main-filter-color)) drop-shadow(0px 0px 5px var(--main-filter-color)) drop-shadow(0px 0px 2px var(--main-filter-color));
     }
-
     .indexMain {
         max-width: 95%;
     }
-
     .post .postCover {
         position: absolute;
         left: 0px;
@@ -264,7 +271,6 @@ html[data-darkreader-scheme='dark'] {
         height: 100%;
         filter: blur(2px);
     }
-
 }
 
 a::after {
@@ -279,12 +285,13 @@ a::after {
     background-color: pink;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-
 }
+
 a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 a:has(img)::after {
     display: none;
 }
