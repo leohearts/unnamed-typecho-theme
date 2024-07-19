@@ -119,16 +119,16 @@
             echo $commentClass;
             ?>">
                 <div id="<?php $comments->theId(); ?>">
-                    <div class="comment-author">
-                        <?php $comments->gravatar('40', ''); ?>
-                        <cite class="fn"><?php $comments->author(); ?></cite>
-                    </div>
                     <div class="comment-meta">
+                        <div class="comment-author">
+                            <?php $comments->gravatar('80', ''); ?>
+                        </div>
+                        <cite class="fn"><?php $comments->author(); ?></cite>
                         <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
                         <?php $options->commentStatus(); ?>
-                        <span class="comment-reply"><?php $comments->reply(); ?></span>
                     </div>
                     <?php $comments->content(); ?>
+                    <span class="comment-reply"><?php $comments->reply(); ?></span>
                 </div>
             <?php if ($comments->children) { ?>
                 <div class="comment-children">
