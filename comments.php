@@ -1,11 +1,25 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div id="comments">
     <style>
+
 .comment-form {
   display: flex;
 }
+.comment-content {
+  display: flex;
+}
 .comment-content textarea {
-  width: calc(90% + 36px);
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: darkpink;
+  border-radius: 5px;
+  padding: 15px;
+  list-style-type: none;
+  resize: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 #response {
   width: 100%;
@@ -15,18 +29,57 @@
 .input-id {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 100%;
   align-self: center;
-  margin-right: 20px;
 }
 
 #comment-form {
   display: flex;
   flex-direction: column;
 }
+.input-id label {
+  height: 1.5em;
+}
+.input-id input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 3px;
+}
 
-.input-id-box {
-  display: flex;
+.input-id-box { 
+  display: grid;
+  grid-template: "a b c";
+  grid-column-gap: 20px;
+}
+    
+.comment-parent {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+.comment-parent .comment-reply {
+  text-align: right;
+}
+.comment-list {
+  padding-left: 0px;
+}
+.comment-submit button {
+  border-width: 1px;
+  height: 40px;
+  width: 80px;
+  border-style: solid;
+  border-color: pink;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+.comment-submit button:hover {
+  background-color: pink;
+  transition: background-color 0.2s ease;
 }
     </style>
     <?php $this->comments()->to($comments); ?>
