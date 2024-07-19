@@ -116,6 +116,19 @@
 .comment-reply {
   grid-area: d;
 }
+.respond {
+    animation: showReplyBox 0.3s ease-in-out;
+}
+@keyframes showReplyBox {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
     
     </style>
     <?php $this->comments()->to($comments); ?>
