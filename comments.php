@@ -116,8 +116,18 @@
 .comment-reply {
   grid-area: d;
 }
+.cancel-comment-reply {
+	border-width: 2px;
+	border-style: dashed;
+	border-color: burlywood;
+	display: inline;
+	padding: 5px 8px;
+	border-radius: 5px;
+	font-size: smaller;
+}
 .respond {
     animation: showReplyBox 0.3s ease-in-out;
+    margin: 20px 0px 50px 0px;
 }
 @keyframes showReplyBox {
     0% {
