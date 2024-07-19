@@ -89,7 +89,25 @@
   background-color: pink;
   transition: background-color 0.2s ease;
 }
-    
+.comment-meta p {
+  margin: 0px;
+}
+.comment-meta {
+  display: grid;
+  grid-template: "a b" auto
+    "a c"
+    / auto 1fr
+    ;
+}
+.comment-author {
+  grid-area: a;
+}
+.comment-meta cite {
+  grid-area: b;
+}
+.comment-meta p {
+  grid-area: c;
+}
     </style>
     <?php $this->comments()->to($comments); ?>
     <?php if ($comments->have()): ?>
@@ -121,12 +139,12 @@
                 <div id="<?php $comments->theId(); ?>">
                     <div class="comment-meta">
                         <div class="comment-author">
-                            <?php $comments->gravatar('80', ''); ?>
+                            <?php $comments->gravatar('40', ''); ?>
                         </div>
                         <cite class="fn"><?php $comments->author(); ?></cite>
                         <p>
                             <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
-                            <span><?php $options->commentStatus(); ?></span>
+                            <span><?php //$options->commentStatus(); ?></span>
                         </p>
                     </div>
                     <?php $comments->content(); ?>
