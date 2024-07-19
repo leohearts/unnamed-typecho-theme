@@ -92,7 +92,6 @@
     
     </style>
     <?php $this->comments()->to($comments); ?>
-    <?php $this->options()->to($options); ?>
     <?php if ($comments->have()): ?>
         <h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
 
@@ -138,7 +137,7 @@
             <?php } ?>
             </li>
         <?php } ?>
-        <?php $comments->threadedComments($options); ?>
+        <?php $comments->listComments(); ?>
 
         <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
 
