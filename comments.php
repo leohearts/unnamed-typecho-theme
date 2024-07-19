@@ -104,8 +104,10 @@
   grid-area: a;
 }
 .comment-author img {
-  border-radius: 8px;
+  border-radius: 10px;
   margin-right: 10px;
+  width: 45px;
+  height: 45px;
 }
 .comment-meta cite {
   grid-area: b;
