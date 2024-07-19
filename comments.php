@@ -1,6 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div id="comments">
     <style>
+
 #comments h3 {
   margin-bottom: 0px;
   margin-top: 30px;
@@ -15,9 +16,9 @@
 }
 .comment-content textarea {
   width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: darkpink;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: lightpink;
   border-radius: 5px;
   padding: 15px;
   list-style-type: none;
@@ -62,12 +63,12 @@
 }
     
 .comment-parent {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #ccc;
-  border-radius: 5px;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: cadetblue;
+  border-radius: 10px;
   padding: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   list-style-type: none;
 }
 .comment-parent .comment-reply {
@@ -94,13 +95,17 @@
 }
 .comment-meta {
   display: grid;
-  grid-template: "a b" auto
-    "a c"
-    / auto 1fr
+  grid-template: "a b d" auto
+    "a c d"
+    / auto 1fr auto
     ;
 }
 .comment-author {
   grid-area: a;
+}
+.comment-author img {
+  border-radius: 8px;
+  margin-right: 10px;
 }
 .comment-meta cite {
   grid-area: b;
@@ -108,6 +113,10 @@
 .comment-meta p {
   grid-area: c;
 }
+.comment-reply {
+  grid-area: d;
+}
+    
     </style>
     <?php $this->comments()->to($comments); ?>
     <?php if ($comments->have()): ?>
@@ -146,9 +155,10 @@
                             <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
                             <span><?php //$options->commentStatus(); ?></span>
                         </p>
+                        <p class="comment-reply"><?php $comments->reply(); ?></p>
                     </div>
                     <?php $comments->content(); ?>
-                    <p class="comment-reply"><?php $comments->reply(); ?></p>
+                    
                 </div>
             <?php if ($comments->children) { ?>
                 <div class="comment-children">
