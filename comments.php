@@ -23,7 +23,7 @@
                     <textarea rows="8" cols="50" name="text" id="textarea" class="textarea"
                               required><?php $this->remember('text'); ?></textarea>
                 </p>
-                
+                <div class="input-id-box">
                 <?php if ($this->user->hasLogin()): ?>
                     <p class="input-id"><?php _e('登录身份: '); ?><a
                             href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a
@@ -48,6 +48,7 @@
                                value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
                     </p>
                 <?php endif; ?>
+                </div>
                 <p class="comment-submit">
                     <button type="submit" class="submit"><?php _e('提交评论'); ?></button>
                 </p>
