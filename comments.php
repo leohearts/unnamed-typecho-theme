@@ -4,14 +4,12 @@
 .comment-form {
   display: flex;
 }
-
+.comment-content textarea {
+  width: calc(90% + 36px);
+}
 #response {
   width: 100%;
   display: block;
-}
-
-.comment-content label {
-  display: none;
 }
 
 .input-id {
