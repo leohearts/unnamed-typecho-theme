@@ -137,6 +137,7 @@
             <?php } ?>
             </li>
         <?php } ?>
+        <?php $comments->threadedComments($options); ?>
 
         <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
 
