@@ -116,7 +116,7 @@
 .comment-reply {
   grid-area: d;
 }
-.cancel-comment-reply {
+#cancel-comment-reply-link {
 	border-width: 2px;
 	border-style: dashed;
 	border-color: burlywood;
@@ -124,6 +124,13 @@
 	padding: 5px 8px;
 	border-radius: 5px;
 	font-size: smaller;
+}
+#cancel-comment-reply-link:hover {
+  background-color: burlywood;
+  transition: background-color 0.2s ease;
+}
+#cancel-comment-reply-link:after {
+  display: none;
 }
 .respond {
     animation: showReplyBox 0.3s ease-in-out;
