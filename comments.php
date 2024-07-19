@@ -124,11 +124,13 @@
                             <?php $comments->gravatar('80', ''); ?>
                         </div>
                         <cite class="fn"><?php $comments->author(); ?></cite>
-                        <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
-                        <?php $options->commentStatus(); ?>
+                        <p>
+                            <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
+                            <span><?php $options->commentStatus(); ?></span>
+                        </p>
                     </div>
                     <?php $comments->content(); ?>
-                    <span class="comment-reply"><?php $comments->reply(); ?></span>
+                    <p class="comment-reply"><?php $comments->reply(); ?></p>
                 </div>
             <?php if ($comments->children) { ?>
                 <div class="comment-children">
