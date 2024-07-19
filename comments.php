@@ -73,7 +73,7 @@
 .comment-parent .comment-reply {
   text-align: right;
 }
-.comment-list {
+#comments > .comment-list {
   padding-left: 0px;
 }
 .comment-submit button {
