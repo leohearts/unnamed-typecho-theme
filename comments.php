@@ -219,7 +219,7 @@
                 </p>
                 <div class="input-id-box">
                 <?php if ($this->user->hasLogin()): ?>
-                    <p class="input-id"><?php _e('登录身份: '); ?><a
+                    <p class=""><?php _e('登录身份: '); ?><a
                             href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a
                             href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a>
                     </p>
