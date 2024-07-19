@@ -1,12 +1,17 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div id="comments">
     <style>
+#comments h3 {
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
 
 .comment-form {
   display: flex;
 }
 .comment-content {
   display: flex;
+  margin-bottom: 0px;
 }
 .comment-content textarea {
   width: 100%;
@@ -31,6 +36,7 @@
   flex-direction: column;
   width: 100%;
   align-self: center;
+  margin-top: 6px;
 }
 
 #comment-form {
@@ -38,13 +44,15 @@
   flex-direction: column;
 }
 .input-id label {
-  height: 1.5em;
+  height: 1.8em;
 }
 .input-id input {
   border-width: 1px;
   border-style: solid;
   border-color: #ccc;
-  border-radius: 3px;
+  border-radius: 5px;
+  height: 2em;
+  padding: 0 5px;
 }
 
 .input-id-box { 
@@ -81,10 +89,7 @@
   background-color: pink;
   transition: background-color 0.2s ease;
 }
-
-#comments h3 {
-  margin-bottom: 0px;
-}
+    
     </style>
     <?php $this->comments()->to($comments); ?>
     <?php if ($comments->have()): ?>
