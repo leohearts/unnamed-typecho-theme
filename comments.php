@@ -81,6 +81,10 @@
   background-color: pink;
   transition: background-color 0.2s ease;
 }
+
+#comments h3 {
+  margin-bottom: 0px;
+}
     </style>
     <?php $this->comments()->to($comments); ?>
     <?php if ($comments->have()): ?>
