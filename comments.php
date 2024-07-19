@@ -1,30 +1,41 @@
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://leohearts.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
+<?php function threadedComments($comments, $options) {
+    $commentClass = '';
+    if ($comments->authorId) {
+        if ($comments->authorId == $comments->ownerId) {
+            $commentClass .= ' comment-by-author';
+        } else {
+            $commentClass .= ' comment-by-user';
+        }
+    }
 
-(function($){
-    setInterval(() => {
-        $.each($('iframe'), (arr,x) => {
-            let src = $(x).attr('src');
-            if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
-                $(x).remove();
-            }
-        });
-    }, 3000);
-})(jQuery);
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
+?>
+
+<li id="li-<?php $comments->theId(); ?>" class="comment-body<?php
+if ($comments->levels > 0) {
+    echo ' comment-child';
+    $comments->levelsAlt(' comment-level-odd', ' comment-level-even');
+} else {
+    echo ' comment-parent';
+}
+$comments->alt(' comment-odd', ' comment-even');
+echo $commentClass;
+?>">
+    <div id="<?php $comments->theId(); ?>">
+        <div class="comment-author">
+            <?php $comments->gravatar('40', ''); ?>
+            <cite class="fn"><?php $comments->author(); ?></cite>
+        </div>
+        <div class="comment-meta">
+            <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
+            <span class="comment-reply"><?php $comments->reply(); ?></span>
+        </div>
+        <?php $comments->content(); ?>
+    </div>
+<?php if ($comments->children) { ?>
+    <div class="comment-children">
+        <?php $comments->threadedComments($options); ?>
+    </div>
+<?php } ?>
+</li>
+<?php } ?>
