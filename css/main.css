@@ -275,25 +275,35 @@ html[data-darkreader-scheme='dark'] {
     }
 }
 
-a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    z-index: -1;
-    bottom: 0;
-    left: 0;
-    background-color: pink;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+a {
+    text-decoration: none;
+    background-image: linear-gradient( transparent 50%, pink 50%, pink 85%, transparent 85%, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 0px;
 }
 
-a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+a[target=_blank] {
+    background-size: 100% 6px;
 }
 
-a:has(img)::after {
-    display: none;
+a:hover {
+    background-size: 100% 16px;
+    animation: underline 0.3s ease-out;
+}
+
+@keyframes underline {
+    0% {
+        background-size: 100% 8px;
+    }
+    50% {
+        background-size: 100% 12px;
+    }
+    100% {
+        background-size: 100% 16px;
+    }
+}
+
+a:has(img) {
+    background: none;
 }
