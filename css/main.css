@@ -284,7 +284,17 @@ a {
 }
 
 a[target=_blank] {
-    background-size: 100% 6px;
+    background-size: 100% 8px;
+    &:after {
+        content: "🔗";
+        display: inline-block;
+        position: relative;
+        font-size: 10px;
+        vertical-align: bottom;
+        width: 0px;
+        right: 2px;
+        bottom: -2px;
+    }
 }
 
 a:hover {
@@ -306,4 +316,7 @@ a:hover {
 
 a:has(img) {
     background: none;
+    &:after {
+        display: none;
+    }
 }
