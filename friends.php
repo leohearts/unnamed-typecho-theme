@@ -52,6 +52,21 @@ $this->need('header.php'); ?>
     color: #ff4e6a;
     transition: all .35s;
 }
+.broken {
+  opacity: 0.3;
+}
+.broken:hover {
+  opacity: 1;
+  &::before {
+    position: relative;
+    left: 45%;
+    width: 0px;
+    top: 10%;
+    overflow: visible;
+    text-wrap: nowrap;
+    content: "链接无法访问⛓️‍💥";
+  }
+}
 </style>
 <script>
 /*
@@ -84,6 +99,9 @@ window.onload = (()=>{
             for (entry in e.style){
                 friendName.style[entry] = e.style[entry];
             }
+        }
+        if (e.broken == true){
+            friendEntry.classList.add("broken");
         }
         friendEntry.appendChild(friendImage);
         friendEntry.appendChild(friendName);
