@@ -1,0 +1,50 @@
+.friends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
+}
+
+.friends {
+    display: flex;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07), 0 1px 5px 0 rgba(0, 0, 0, .1);
+    margin: 10px 20px 10px 0px;
+    transition: all 0.3s;
+}
+
+.friends:hover {
+    box-shadow: 0px 2px 10px 0px gray;
+    transition: all 0.3s;
+}
+
+.friends img {
+    height: 100px;
+    width: 100px;
+}
+
+.friends p {
+    color: gray;
+    font-size: 30px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.friends p:hover {
+    color: #ff4e6a;
+    transition: all .35s;
+}
+
+.broken {
+    opacity: 0.3;
+}
+
+.broken:hover {
+    opacity: 1;
+    &::before {
+        position: relative;
+        left: 45%;
+        width: 0px;
+        top: 10%;
+        overflow: visible;
+        text-wrap: nowrap;
+        content: "链接无法访问⛓️‍💥";
+    }
+}
