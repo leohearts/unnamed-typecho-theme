@@ -130,6 +130,7 @@
 #cancel-comment-reply-link:hover {
   background-color: burlywood;
   transition: background-color 0.2s ease;
+  background-image: none;
 }
 #cancel-comment-reply-link:after {
   display: none;
