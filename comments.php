@@ -148,6 +148,12 @@
         transform: translateY(0);
     }
 }
+@media(orientation: portrait) {
+  .input-id-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
     
     </style>
     <?php $this->comments()->to($comments); ?>
