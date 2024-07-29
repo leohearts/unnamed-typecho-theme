@@ -8,9 +8,11 @@
 <head>
     <title><?php $this->options->title(); ?><?php $this->archiveTitle(); ?></title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Light/result.css" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel='preload' href='https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap' as="style" onload="this.onload=null;this.rel='stylesheet'" /> 
     <link rel="me" href="https://nightcord.de/@Leohearts" >
     <noscript>
+        <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Light/result.css' />
         <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap' /> 
     </noscript>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
