@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <?php $this->header(); ?>
-<meta http-equiv="content-type" content="text/html; charset=UTF8" />
-
-<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
 
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
     <title><?php $this->options->title(); ?><?php $this->archiveTitle(); ?></title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-regular/result.css" onload="this.onload=null;this.rel='stylesheet'" as="style" />
