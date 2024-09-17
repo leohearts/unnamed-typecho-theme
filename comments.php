@@ -84,13 +84,13 @@
                         <label
                             for="mail"<?php if ($this->options->commentsRequireMail): ?> class="required"<?php endif; ?>><?php _e('Email'); ?></label>
                         <input type="email" name="mail" id="mail" class="text"
-                               value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
+                               value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php else: ?> placeholder="不用写也没关系"<?php endif; ?> />
                     </p>
                     <p class="input-id">
                         <label
                             for="url"<?php if ($this->options->commentsRequireURL): ?> class="required"<?php endif; ?>><?php _e('网站'); ?></label>
                         <input type="url" name="url" id="url" class="text" placeholder="<?php _e('http://'); ?>"
-                               value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
+                               value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php else: ?> placeholder="不用写也没关系"<?php endif; ?> />
                     </p>
                 <?php endif; ?>
                 </div>
