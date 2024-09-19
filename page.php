@@ -6,7 +6,7 @@
             <div class="postText">
                 <h1 class="entryTitle"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
                     <div class="entryTags">
-                        <p><?php $this->category('/'); ?> on <?php $this->date('Y/m/d'); ?></p>
+                        <p><?php $this->category('/'); ?> <?php $this->tags('/', true, 'none') ?> on <?php $this->date('Y/m/d'); ?></p>
                     </div>
                     <div class="entryText">
                         <?php $this->content(''); ?>
