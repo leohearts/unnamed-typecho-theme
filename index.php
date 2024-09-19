@@ -10,7 +10,7 @@ $this->need('header.php'); ?>
             <div class="texts">
                 <h2 class="entryTitle"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
                 <div class="entryTags">
-                    <p><?php $this->category('/'); ?> <?php $this->tags('/', true, 'none') ?> on <?php $this->date('Y/m/d'); ?></p>
+                    <p><?php $this->category('/'); ?> <?php $this->tags('/', true, '') ?> on <?php $this->date('Y/m/d'); ?></p>
                 </div>
                 <div class="entryText">
                     <?php $this->content(''); ?>
