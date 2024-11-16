@@ -1,4 +1,5 @@
 let delay = false;
+let like_clicked_times = 0;
 document.addEventListener('click', function(e) {
     likesStatHandler(e, 'likes');
 }, true);
@@ -30,7 +31,16 @@ function likesStatHandler(event, type) {
         event.preventDefault();
         return;
     }
+    if (like_clicked_times > 5) {
+        event.target.innerText = "不可以再点啦";
+        event.target.style.position = "absolute";
+        event.target.style.top =
+            (Math.random() * window.innerHeight - 50) + 'px';
+        event.target.style.left =
+            (Math.random() * window.innerWidth - 50) + 'px';
+    }
     delay = true;
+    like_clicked_times += 1;
     const cid = event.target.dataset.cid;
     doUpdate(type, cid);
 }
