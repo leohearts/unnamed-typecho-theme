@@ -78,13 +78,13 @@
                     <p class="input-id">
                         <label for="author" class="required"><?php _e('称呼'); ?></label>
                         <input type="text" name="author" id="author" class="text"
-                               value="<?php $this->remember('author'); ?>" required/>
+                               value="<?php $this->remember('author'); ?>" placeholder="要写的" required/>
                     </p>
                     <p class="input-id">
                         <label
                             for="mail"<?php if ($this->options->commentsRequireMail): ?> class="required"<?php endif; ?>><?php _e('Email'); ?></label>
                         <input type="email" name="mail" id="mail" class="text"
-                               value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php else: ?> placeholder="不用写也没关系"<?php endif; ?> />
+                               value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php else: ?> placeholder="用于接收回复, 不用写也没关系"<?php endif; ?> />
                     </p>
                     <p class="input-id">
                         <label
