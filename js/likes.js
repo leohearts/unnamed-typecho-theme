@@ -31,6 +31,8 @@ function likesStatHandler(event, type) {
         event.preventDefault();
         return;
     }
+    like_clicked_times += 1;
+    const cid = event.target.dataset.cid;
     if (like_clicked_times > 5) {
         const gets = document.querySelector('.get-' + type + '[data-cid="' + cid + '"]');
         gets.innerText = "不可以再点啦";
@@ -42,7 +44,5 @@ function likesStatHandler(event, type) {
         return;
     }
     delay = true;
-    like_clicked_times += 1;
-    const cid = event.target.dataset.cid;
     doUpdate(type, cid);
 }
