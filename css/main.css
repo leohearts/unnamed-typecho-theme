@@ -322,6 +322,7 @@ a:has(img) {
 }
 
 .set-likes:hover {
-    filter: drop-shadow(0px 0px 5px var(--main-filter-color)) drop-shadow(0px 0px 2px var(--main-filter-color));
-    transition: 0.2s ease;
+    filter: drop-shadow(1px 1px 1px rgba(255, 0, 0, 0.3));
+    transition: 0.3s ease;
+    cursor: pointer;
 }
