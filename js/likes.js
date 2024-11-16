@@ -1,19 +1,9 @@
 let delay = false;
 document.addEventListener('click', function(e) {
-    statHandler(e, 'likes');
+    likesStatHandler(e, 'likes');
 }, true);
 
-function statHandler(event, type) {
-    if (!event.target.classList.contains('set-' + type)) {
-        return;
-    }
-    event.stopPropagation();
-    if (delay) {
-        event.preventDefault();
-        return;
-    }
-    delay = true;
-    const cid = event.target.dataset.cid;
+function doUpdate(type, cid) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', '/index.php/action/stat?do=' + type + '&cid=' + cid, true);
     xhr.onload = function() {
@@ -29,4 +19,18 @@ function statHandler(event, type) {
         delay = false;
     };
     xhr.send();
+}
+
+function likesStatHandler(event, type) {
+    if (!event.target.classList.contains('set-' + type)) {
+        return;
+    }
+    event.stopPropagation();
+    if (delay) {
+        event.preventDefault();
+        return;
+    }
+    delay = true;
+    const cid = event.target.dataset.cid;
+    doUpdate(type, cid);
 }
