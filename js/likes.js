@@ -36,11 +36,13 @@ function likesStatHandler(event, type) {
     if (like_clicked_times > 5) {
         const gets = document.querySelector('.get-' + type + '[data-cid="' + cid + '"]');
         gets.innerText = "不可以再点啦";
-        event.target.style.position = "absolute";
-        event.target.style.top =
+        const sets = document.querySelector('.set-' + type + '[data-cid="' + cid + '"]');
+        sets.style.position = "absolute";
+        sets.style.top =
             (Math.random() * (window.innerHeight - 50)) + 'px';
-        event.target.style.left =
+        sets.style.left =
             (Math.random() * (window.innerWidth - 50)) + 'px';
+        sets.style.zIndex = 114514;
         return;
     }
     delay = true;
