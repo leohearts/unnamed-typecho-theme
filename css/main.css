@@ -320,3 +320,8 @@ a:has(img) {
         display: none;
     }
 }
+
+.set-likes:hover {
+    filter: drop-shadow(0px 0px 5px var(--main-filter-color)) drop-shadow(0px 0px 2px var(--main-filter-color));
+    transition: 0.2s ease;
+}
