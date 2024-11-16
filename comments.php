@@ -78,7 +78,7 @@
                     <p class="input-id">
                         <label for="author" class="required"><?php _e('称呼'); ?></label>
                         <input type="text" name="author" id="author" class="text"
-                               value="<?php $this->remember('author'); ?>" placeholder="要写的" required/>
+                               value="<?php $this->remember('author'); ?>" placeholder="必填" required/>
                     </p>
                     <p class="input-id">
                         <label
