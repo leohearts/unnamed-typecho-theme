@@ -48,7 +48,7 @@ blockquote {
 
 .entryTags {
     font-size: large;
-    font-style: italic;
+    /* font-style: italic; */
     color: #676767;
 }
 

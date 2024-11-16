@@ -14,7 +14,7 @@
             <div class="postText">
                 <h1 class="entryTitle"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
                 <div class="entryTags">
-                    <p class="get-likes"><?php $this->category('/'); ?> 🏷️<?php $this->tags('/', true, '') ?> 🕒<?php $this->date('Y/m/d'); ?> 👀<?php $this->viewsNum(); ?> <i class="set-likes iconfont icon-zan" data-cid="<?php $this->cid(); ?>">💖</i><?php $this->viewsNum(); ?></p>
+                    <p class="get-likes">🏷️<?php $this->category('/'); ?>/<?php $this->tags('/', true, '') ?> 🕒<?php $this->date('Y/m/d'); ?> 👀<?php $this->viewsNum(); ?> <i class="set-likes iconfont icon-zan" data-cid="<?php $this->cid(); ?>">💖</i><?php $this->viewsNum(); ?></p>
                 </div>
                 <div class="entryText">
                     <?php
