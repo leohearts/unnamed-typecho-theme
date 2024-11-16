@@ -34,6 +34,9 @@
         <script src="<?php $this->options->themeUrl('js/post.js'); ?>" async></script>
         <script src="https://cdn.jsdelivr.net/npm/fslightbox@3.3.1/index.js" async defer></script>
     <?php endif; ?>
+    <?php if ($this->is('post') || $this->is('page')) : ?>
+        <script src="<?php $this->options->themeUrl('js/likes.js'); ?>" async defer></script>
+    <?php endif; ?>
 </head>
 
 <body>
