@@ -32,12 +32,14 @@ function likesStatHandler(event, type) {
         return;
     }
     if (like_clicked_times > 5) {
-        event.target.innerText = "不可以再点啦";
+        const gets = document.querySelector('.get-' + type + '[data-cid="' + cid + '"]');
+        gets.innerText = "不可以再点啦";
         event.target.style.position = "absolute";
         event.target.style.top =
-            (Math.random() * window.innerHeight - 50) + 'px';
+            (Math.random() * (window.innerHeight - 50)) + 'px';
         event.target.style.left =
-            (Math.random() * window.innerWidth - 50) + 'px';
+            (Math.random() * (window.innerWidth - 50)) + 'px';
+        return;
     }
     delay = true;
     like_clicked_times += 1;
