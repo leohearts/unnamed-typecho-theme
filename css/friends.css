@@ -25,9 +25,11 @@
         opacity: 0;
         width: 100%;
         transition: all .3s;
+        height: 0px;
+        font-size: medium;
     }
     .friendDesc {
-        opacity: 0;
+/*         opacity: 0; */
         color: gray;
         transition: all .3s;
 
@@ -45,11 +47,12 @@
         box-shadow: 0px 2px 10px 0px gray;
         .friendJoin {
             opacity: initial;
-            height: initial;
+            margin-top: -15px;
+            height: 15px;
+
         }
         .friendDesc {
             opacity: initial;
-            height: initial;
         }
         p {
             color: #ff4e6a!important;;
@@ -67,7 +70,7 @@
             position: relative;
             left: 45%;
             width: 0px;
-            top: 41%;
+            top: 30%;
             overflow: visible;
             text-wrap: nowrap;
             content: "链接无法访问⛓️‍💥";
