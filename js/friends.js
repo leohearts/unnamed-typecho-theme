@@ -25,12 +25,10 @@ window.onload = (() => {
         let friendData = document.createElement("div");
         friendData.className = "friendData";
 
-        if (e.join) {
-            let friendJoin = document.createElement("span");
-            friendJoin.className = "friendJoin";
-            friendJoin.innerText = e.join;
-            friendData.appendChild(friendJoin);
-        }
+        let friendJoin = document.createElement("span");
+        friendJoin.className = "friendJoin";
+        friendJoin.innerText = e.join || "";
+        friendData.appendChild(friendJoin);
 
         let friendName = document.createElement("p");
         friendName.className = "friendName";
@@ -48,12 +46,10 @@ window.onload = (() => {
         }
         friendData.appendChild(friendName);
 
-        if (e.description) {
-            let friendDesc = document.createElement("span");
-            friendDesc.className = "friendDesc";
-            friendDesc.innerText = e.description;
-            friendData.appendChild(friendDesc);
-        }
+        let friendDesc = document.createElement("span");
+        friendDesc.className = "friendDesc";
+        friendDesc.innerText = e.description || "";
+        friendData.appendChild(friendDesc);
 
         if (e.broken == true) {
             friendEntry.classList.add("broken");
