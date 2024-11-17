@@ -38,7 +38,10 @@ window.onload = (() => {
                 let x = document.createElement("link");
                 x.rel = "preload";
                 x.href = "https://fonts.googleapis.com/css?family=" + e.style.fontFamily;
-                x.onload = "this.onload=null;this.rel='stylesheet'";
+                x.onload = (e) => {
+                    this.onload=null;
+                    this.rel='stylesheet'
+                };
                 x.as = "style";
                 document.head.appendChild(x);
             }
