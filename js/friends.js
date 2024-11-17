@@ -36,8 +36,10 @@ window.onload = (() => {
         if (e.style != undefined) {
             if ("fontFamily" in e.style) {
                 let x = document.createElement("link");
-                x.rel = "stylesheet";
+                x.rel = "prefetch";
                 x.href = "https://fonts.googleapis.com/css?family=" + e.style.fontFamily;
+                x.onload = "this.onload=null;this.rel='stylesheet'";
+                x.as = "style";
                 document.head.appendChild(x);
             }
             for (entry in e.style) {
