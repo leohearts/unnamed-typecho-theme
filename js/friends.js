@@ -27,7 +27,7 @@ window.onload = (() => {
 
         let friendJoin = document.createElement("span");
         friendJoin.className = "friendJoin";
-        friendJoin.innerText = e.join || "";
+        friendJoin.innerText = e.join || "20??";
         friendData.appendChild(friendJoin);
 
         let friendName = document.createElement("p");
@@ -48,7 +48,7 @@ window.onload = (() => {
 
         let friendDesc = document.createElement("span");
         friendDesc.className = "friendDesc";
-        friendDesc.innerText = e.description || "";
+        friendDesc.innerText = e.description || "是什么呢";
         friendData.appendChild(friendDesc);
 
         if (e.broken == true) {
