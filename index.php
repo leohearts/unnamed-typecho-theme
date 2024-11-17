@@ -11,8 +11,8 @@ $this->need('header.php'); ?>
                 <h2 class="entryTitle"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
                 <div class="entryTags">
                         <p style="display: inline">
-                            <span class="tags">🏷️<?php $this->category('/'); ?>/<?php $this->tags('/', true, '') ?></span>
-                            <span class="tags">🕒<?php $this->date('Y/m/d'); ?></span>
+                            <span class="tags">🏷️ <?php $this->category('/'); ?>/<?php $this->tags('/', true, '') ?></span>
+                            <span class="tags">🕒 <?php $this->date('Y/m/d'); ?></span>
                         </p>
                     </div>
                 <div class="entryText">
