@@ -13,7 +13,7 @@ friendsData = [
     }
 ]
 */
-window.onload = (() => {
+addEventListener("DOMContentLoaded", (event) => {
     let friendsRoot = document.getElementsByClassName("friends-grid")[0];
     friendsData.forEach(e => {
         let friendEntry = document.createElement("a");
