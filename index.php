@@ -10,8 +10,11 @@ $this->need('header.php'); ?>
             <div class="texts">
                 <h2 class="entryTitle"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
                 <div class="entryTags">
-                    <p>🏷️<?php $this->category('/'); ?>/<?php $this->tags('/', true, '') ?> 🕒<?php $this->date('Y/m/d'); ?></p>
-                </div>
+                        <p style="display: inline">
+                            <span class="tags">🏷️<?php $this->category('/'); ?>/<?php $this->tags('/', true, '') ?></span>
+                            <span class="tags">🕒<?php $this->date('Y/m/d'); ?></span>
+                        </p>
+                    </div>
                 <div class="entryText">
                     <?php $this->content(''); ?>
                 </div>

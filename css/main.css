@@ -326,3 +326,8 @@ a:has(img) {
     transition: 0.3s ease;
     cursor: pointer;
 }
+
+.tags {
+    display: inline-block;
+    margin-right: 10px;
+}
