@@ -39,9 +39,9 @@ window.onload = (() => {
                 x.rel = "preload";
                 x.href = "https://fonts.googleapis.com/css?family=" + e.style.fontFamily;
                 x.onload = (e) => {
-                    this.onload=null;
-                    this.rel='stylesheet'
-                };
+                    e.target.onload=null;
+                    e.target.rel='stylesheet'
+                };4
                 x.as = "style";
                 document.head.appendChild(x);
             }
