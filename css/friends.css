@@ -34,7 +34,6 @@
         transition: all .3s;
 
         min-height: 22px;
-        line-height: 15px;
     }
     p { /* name */
         font-size: 30px;
