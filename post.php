@@ -48,6 +48,7 @@
             </div>
         </div>
     <?php endwhile; ?>
+    <?php $this->need('license.php'); ?>
     <?php $this->need('comments.php'); ?>
 </div>
 
