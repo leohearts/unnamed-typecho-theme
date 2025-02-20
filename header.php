@@ -37,6 +37,7 @@
     <?php if ($this->is('post') || $this->is('page')) : ?>
         <script src="<?php $this->options->themeUrl('js/likes.js'); ?>" async defer></script>
     <?php endif; ?>
+    <!-- Cloudflare Web Analytics --><script defer src='https://cf-analytics.leohearts.com/beacon.min.js' data-cf-beacon='{"token": "77451a38c1e0446db70a5f594e7c9a64"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 
 <body>
