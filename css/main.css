@@ -89,6 +89,7 @@ blockquote {
 .headbar .descriptions * {
     margin: 0px;
     overflow: visible;
+    font-family: initial;
 }
 
 .headbar a {
