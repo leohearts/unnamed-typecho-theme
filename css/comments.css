@@ -116,8 +116,9 @@
     height: 45px;
 }
 
-.comment-meta cite {
+.comment-meta span {
     grid-area: b;
+    font-weight: bold;
 }
 
 .comment-meta p {

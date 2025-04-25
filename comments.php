@@ -33,7 +33,7 @@
                         <div class="comment-author">
                             <?php $comments->gravatar('40', ''); ?>
                         </div>
-                        <cite class="fn"><?php $comments->author(); ?></cite>
+                        <span class="comment-author-name"><?php $comments->author(); ?></span>
                         <p>
                             <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
                             <span><?php //$options->commentStatus(); ?></span>
