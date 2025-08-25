@@ -197,8 +197,9 @@ a {
         position: fixed;
         right: 0px;
         top: 100px;
-        z-index: 0;
+        z-index: 1;
         max-height: 90vh;
+        max-width: 18vw;
         overflow: scroll;
     }
 }
