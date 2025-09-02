@@ -163,10 +163,13 @@ pre {
 }
 
 code {
-    font-family: 'Source Code Pro', monospace !important;
-    white-space: inherit !important;
-    word-break: break-all;
-    font-size: 0.95em;
+	font-family: 'Source Code Pro', monospace !important;
+	white-space: inherit !important;
+	word-break: break-all;
+	font-size: 0.95em;
+	background: #ffdfdf;
+	border-radius: 8px;
+	padding-inline: 5px;
 }
 
 .imgParent {
