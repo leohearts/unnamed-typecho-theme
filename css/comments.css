@@ -87,13 +87,13 @@
     height: 40px;
     width: 80px;
     border-style: solid;
-    border-color: pink;
+    border-color: var(--primary-color);
     border-radius: 5px;
     background-color: antiquewhite;
 }
 
 .comment-submit button:hover {
-    background-color: pink;
+    background-color: brown;
     transition: background-color 0.2s ease;
 }
 
@@ -170,5 +170,19 @@
     .input-id-box {
         display: flex;
         flex-direction: column;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .comment-content textarea {
+        border-color: var(--primary-color);;
+        background-color: #2b2a33;
+    }
+    .input-id input {
+        border-color: #3e4446;
+    }
+    .comment-submit button {
+        border-width: 1px;
+        border-color: #3e4446;
+        background-color: var(--primary-color);
     }
 }
