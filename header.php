@@ -9,7 +9,7 @@
     <title><?php htmlspecialchars($this->options->title()); ?><?php htmlspecialchars($this->archiveTitle()); ?></title>
     <meta property="og:title" content="<?php htmlspecialchars($this->options->title()); ?><?php htmlspecialchars($this->archiveTitle()); ?>" />
     <meta property="og:url" content="<?php $this->permalink() ?>" />
-    <meta property="og:image" content="<?php $this->fields->Cover ?>" />
+    <meta property="og:image" content="<?php $this->fields->Cover ? $this->fields->Cover : $this->options->background ?>" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-regular/result.css" onload="this.onload=null;this.rel='stylesheet'" as="style" />
     <link rel='preload' href='https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap' as="style" onload="this.onload=null;this.rel='stylesheet'" /> 
