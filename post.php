@@ -1,9 +1,6 @@
 <?php $this->need('header.php'); ?>
 <?php $this->need('utils.php'); ?>
 
-<meta property="og:image" content="<?php $this->fields->Cover ?>" />
-
-
 <div class="main">
     <div class="postMainCover">
         <?php if ($this->fields->Cover) { ?>
