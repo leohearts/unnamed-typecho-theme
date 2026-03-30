@@ -1,7 +1,7 @@
 <?php $this->need('header.php'); ?>
 <?php $this->need('utils.php'); ?>
 
-<meta property="og:image" content="<?php $this->fields->Cover ? $this->fields->Cover : $this->options->background ?>" />
+<meta property="og:image" content="<?php $this->options->background ?>" />
 
 
 <div class="main">
