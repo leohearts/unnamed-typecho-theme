@@ -5,11 +5,16 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=1">
+    <meta name="fediverse:creator" content="@Leohearts@nightcord.de">
     <title><?php $this->options->title(); ?><?php $this->archiveTitle(); ?></title>
+    <meta property="og:title" content="<?php $this->options->title(); ?><?php $this->archiveTitle(); ?>" />
+    <meta property="og:url" content="<?php $this->permalink() ?>" />
+    <meta property="og:image" content="<?php $this->fields->Cover ?>" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-regular/result.css" onload="this.onload=null;this.rel='stylesheet'" as="style" />
     <link rel='preload' href='https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap' as="style" onload="this.onload=null;this.rel='stylesheet'" /> 
     <link rel="me" href="https://nightcord.de/@Leohearts" >
+
     <noscript>
         <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-regular/result.css' as="style" />
         <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap' /> 
