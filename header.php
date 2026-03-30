@@ -6,8 +6,8 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=1">
     <meta name="fediverse:creator" content="@Leohearts@nightcord.de">
-    <title><?php $this->options->title(); ?><?php $this->archiveTitle(); ?></title>
-    <meta property="og:title" content="<?php $this->options->title(); ?><?php $this->archiveTitle(); ?>" />
+    <title><?php htmlspecialchars($this->options->title()); ?><?php htmlspecialchars($this->archiveTitle()); ?></title>
+    <meta property="og:title" content="<?php htmlspecialchars($this->options->title()); ?><?php htmlspecialchars($this->archiveTitle()); ?>" />
     <meta property="og:url" content="<?php $this->permalink() ?>" />
     <meta property="og:image" content="<?php $this->fields->Cover ?>" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
