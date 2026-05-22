@@ -206,9 +206,40 @@ a {
         right: 0px;
         top: 100px;
         z-index: 1;
-        max-height: 90vh;
-        max-width: 18vw;
-        overflow: scroll;
+        max-height: calc(100vh - 120px);
+        max-width: 22vw;
+        overflow: auto;
+    }
+}
+
+@media(orientation: landscape) and (max-width: 1333px) {
+    .main {
+        max-width: min(94vw, 1180px);
+    }
+
+    .entryText {
+        display: grid;
+        grid-template-columns: minmax(400px, 1fr) minmax(220px, 300px);
+        column-gap: 24px;
+        align-items: start;
+    }
+
+    .entryText > :not(#tableOfContents) {
+        grid-column: 1;
+    }
+
+    #tableOfContents {
+        grid-column: 2;
+        grid-row: 1 / span 999;
+        float: none;
+        position: sticky;
+        top: 100px;
+        right: auto;
+        z-index: auto;
+        width: auto;
+        max-width: none;
+        margin-left: 0;
+        margin-bottom: 1em;
     }
 }
 
