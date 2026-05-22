@@ -210,6 +210,11 @@ a {
         max-width: 20vw;
         overflow: auto;
     }
+
+    #tableOfContents ol {
+        margin-left: 0;
+        padding-left: 1.2em;
+    }
 }
 
 @media(orientation: landscape) and (max-width: 1333px) {
