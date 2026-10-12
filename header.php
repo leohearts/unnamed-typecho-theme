@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="<?php echo str_replace('_', '-', $this->options->lang); ?>">
 <?php $this->header(); ?>
 
 <head>
@@ -11,13 +11,16 @@
     <meta property="og:url" content="<?php $this->permalink() ?>" />
     <meta property="og:image" content="<?php echo $this->fields->Cover ? $this->fields->Cover : $this->options->background ; ?>" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-regular/result.css" onload="this.onload=null;this.rel='stylesheet'" as="style" />
-    <link rel='preload' href='https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap' as="style" onload="this.onload=null;this.rel='stylesheet'" /> 
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <!-- Simplified Chinese: LXGW WenKai GB (G source glyphs) -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@free-fonts/lxgw-wenkai-gb@1.0.1/lxgw-wenkai-gb.css" onload="this.onload=null;this.rel='stylesheet'" as="style" />
+    <!-- Traditional Chinese (Taiwan): Iansui; Japanese: Klee One -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Iansui&family=Klee+One&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="me" href="https://nightcord.de/@Leohearts" >
 
     <noscript>
-        <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-regular/result.css' as="style" />
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap' /> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@free-fonts/lxgw-wenkai-gb@1.0.1/lxgw-wenkai-gb.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Iansui&family=Klee+One&display=swap" />
     </noscript>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>

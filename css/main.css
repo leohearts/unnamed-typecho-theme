@@ -1,6 +1,8 @@
 :root {
     --primary-color: pink;
     --bg-code: #ffdfdf;
+    /* Simplified Chinese (G source) -> Traditional Chinese (Taiwan) -> Japanese */
+    --cjk-fonts: 'LXGW WenKai GB', 'Iansui', 'Klee One', sans-serif;
 }
 
 * {
@@ -40,8 +42,21 @@
 }
 
 body {
-    font-family: 'LXGW WenKai', 'LXGW WenKai TC', sans-serif;
+    font-family: var(--cjk-fonts);
     font-size: large;
+}
+
+/* Each CJK region needs its own glyph forms; select them with lang attributes */
+:lang(zh-Hans), :lang(zh-CN) {
+    font-family: var(--cjk-fonts);
+}
+
+:lang(zh-Hant), :lang(zh-TW), :lang(zh-HK) {
+    font-family: 'Iansui', var(--cjk-fonts);
+}
+
+:lang(ja) {
+    font-family: 'Klee One', var(--cjk-fonts);
 }
 
 blockquote {
